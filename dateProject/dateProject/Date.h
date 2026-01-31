@@ -319,6 +319,14 @@ public:
 		return isDate1EqualDate2(*this, d2);
 	}
 
+	static bool isDate1AfterDate2(Date d1, Date d2) {
+		return !(isDate1BeforDate2(d1, d2) && isDate1EqualDate2(d1, d2));
+	}
+
+	bool isDate1AfterDate2( Date d2) {
+		return isDate1AfterDate2(*this, d2);
+	}
+
 
 	static bool IsLastDayInMonth(Date Date)
 	{

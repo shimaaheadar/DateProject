@@ -149,6 +149,17 @@ public:
 
 	}
 
+	static  void ShuffleArray(string arr[100], int arrLength)
+	{
+
+		for (int i = 0; i < arrLength; i++)
+		{
+			Swap(arr[randomNum(1, arrLength) - 1], arr[randomNum(1, arrLength) - 1]);
+		}
+
+	}
+
+
 	static string tap(short numOfTaps) {
 		string t = "";
 		for (int i = 0; i < numOfTaps; i++) {
